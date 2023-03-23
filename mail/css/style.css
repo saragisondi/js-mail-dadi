@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 300px;
+  min-height: 150px;
+ background-color: brown;
+ border: 2px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 200px auto;
+}

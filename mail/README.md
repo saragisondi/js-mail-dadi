@@ -15,4 +15,7 @@ stampare un messaggio appropriato sull’esito del controllo.
 Ho creato una  lista di mail e le ho messe in una costante.
 
 ## SECOND STEP
-Ho creato un ciclo per 
+Ho creato un prompt per chiedere la mail dell'utente.
+
+## THIRD STEP
+Ho creato un ciclo per verificare che l'email inserita corrisponda ad una delle mail inserite nel array.
