@@ -12,3 +12,7 @@ stampare un messaggio appropriato sull’esito del controllo.
 
 
 ## FIRST STEP
+Ho creato una  lista di mail e le ho messe in una costante.
+
+## SECOND STEP
+Ho creato un ciclo per 

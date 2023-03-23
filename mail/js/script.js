@@ -13,14 +13,23 @@ const mailList = [
 ]
 console.log(mailList);
 
-//CICLO
-i= 0;
-for(let i = 0; i < mailList.length; i++){
-  if (!(i === 0))
-  console.log(mailList[i]);
-}
 //PROMPT
 const mail = prompt('inserisci la tua mail')
 console.log(mail)
+//CICLO e CONFRONTO 
+let trovato = "false";
 
-//CONFRONTO 
+for(let i = 0; i < mailList.length; i++){
+  if (mail === mailList[i]){
+    trovato = "true";
+  }
+  console.log(mailList[i]);
+}
+
+if (trovato === "true"){
+  console.log('login effettuato');
+  document.getElementById('output').innerHTML = "Accesso Eseguito"
+}else{
+  console.warn('errore');
+  document.getElementById('output').innerHTML = "Accesso Negato"
+}
