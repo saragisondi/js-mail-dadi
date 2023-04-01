@@ -1,71 +1,55 @@
 
-// //ARRAY
-// const number =[
-//   1,
-//   2,
-//   3,
-//   4,
-//   5,
-//   6
-// ]
-// console.log(number)
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+const btn = document.querySelector('button')
+btn.addEventListener('click', function(){
+  //genero numeri random
+  const numberPC =  Math.floor(Math.random()* 6) +1;
+  document.querySelector('.pc').innerHTML = ( numberPC)
+  console.log(numberPC)
+  
+  const numberUser = Math.floor(Math.random()* 6) +1;
+  console.log(numberUser)
+  document.querySelector('.user').innerHTML = (numberUser)
+  
+  const msg = document.querySelector('h1')
+  
+  //stabilire il vincitore
+  if (numberUser < numberPC) {
+    console.log('PC','vince il computer!')
+    msg.innerHTML = ` Vince il COMPUTER!`
+  }else{
+    console.log('USER','Hai vinto!')
+    msg.innerHTML = `Hai vinto!`
+  }
+
+})
+
+
+
 
 // const btn = document.querySelector("button");
 // console.log(btn)
 
 // //PLAYER
 // btn.addEventListener('click', function (){
-//   let randomPlayer = Math.floor( Math.random() * (number[i])+1)
-//   console.log(randomPlayer)
-// })
-// for (i=1; i<=number ; i++);
 
-// //COMPUTER 
-// btn.addEventListener('click', function (){
-//   let randomPc = Math.floor( Math.random() * (number[i])+1)
-//   console.log(randomPc)
+// const player_a = Math.ceil (Math.random() * 6)
+// const player_b = Math.ceil (Math.random() * 6)
+
+
+// console.log(player_a, player_b);
 // })
 
-// let= vincitore ="false"
+// let message;
 
-// for (let i=1; i<=number ; i++){
-//   if (randomPlayer > randomPc){
-//     vincitore="true";
-//   }
-//   console.log('Giocatore 1, Hai vinto!');
-//   document.getElementById('output').innerHTML= `
-//   Hai vinto!
-//   `
-// if(randomPlayer< randomPc){
-//   console.log('Giocatore 1, Hai perso!')
-// }
-//     document.getElementById('output').innerHTML= `
-//     Hai perso!
-//     `
+// if(player_a>player_b){
+//   message= "vince A"
+// }else if(player_a<player_b){
+//   message = "Vince B"
+// }else{
+//   message="Pari!"
 // }
 
-
-const btn = document.querySelector("button");
-console.log(btn)
-
-//PLAYER
-btn.addEventListener('click', function (){
-
-const player_a = Math.cell (Math.random() * 6)
-const player_b = Math.cell (Math.random() * 6)
-
-
-console.log(player_a, player_b);
-})
-
-let message;
-
-if(player_a>player_b){
-  message= "vince A"
-}else if(player_a<player_b){
-  message = "Vince B"
-}else{
-  message="Pari!"
-}
-
-console.log(message);
+// console.log(message);

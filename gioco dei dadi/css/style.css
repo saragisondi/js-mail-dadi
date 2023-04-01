@@ -1,4 +1,11 @@
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -11,3 +18,24 @@ button{
   background-color: rgba(137, 43, 226, 0.456);
   font-weight:bold;
 }
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+  .pc , .user{
+    margin: 35px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
